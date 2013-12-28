@@ -1,0 +1,17 @@
+{
+  "main": "index.html",
+  "name": "ircly",
+  "version": "0.1.0-dev",
+  "description": "simple and beautiful irc client",
+  "keywords": [ "irc", "client", "chat", "node-webkit" ],
+  "window": {
+    "icon": "favicon.png",
+    "toolbar": true, 
+    "frame": true,
+    "min_width": 550,
+    "min_height": 200
+  },
+  "dependencies": {
+    "irc": ">= 0.3.6"
+  }
+}
