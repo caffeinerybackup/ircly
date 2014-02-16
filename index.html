@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- for debugging: change to css/bootstrap.css -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,24 +23,107 @@
 </head>
 
 <body>
+    <div id="wrapper">
 
-<div class="container">
-    <div class="row">
-        <div id="messagebox" class="col-md-12 messagebox">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; background-color: #fff; border-bottom: 0;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand"><i class="fa fa-comment"></i> IRCLY</div>
+            </div>
+            <!-- /.navbar-header -->
+        </nav>
+        <!-- /.navbar-static-top -->
 
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar sidebar-collapse">
+                <ul class="nav nav-stacked" id="side-menu">
+                    <li class="navbar-network">
+                        <a href="#"><i class="fa fa-bars fa-fw"></i> Bitlbee<span class="fa arrow"></span></a>
+                    </li>
+                    <ul class="nav nav-second-level collapse in" style="height: auto;">
+                        <li>
+                            <a href="#">&bitlbee</a>
+                        </li>
+                    </ul>
+                    <li class="navbar-network">
+                        <a href="#"><i class="fa fa-bars fa-fw"></i> Kerat<span class="fa arrow"></span></a>
+                    </li>
+                    <ul class="nav nav-second-level collapse in" style="height: auto;">
+                        <li class="active">
+                            <a href="#">#pupskuchen</a>
+                        </li>
+                        <li>
+                            <a href="#">#tipdice</a>
+                        </li>
+                        <li>
+                            <a href="#">#test</a>
+                        </li>
+                        <li>
+                            <a href="#">#wm</a>
+                        </li>
+                        <li>
+                            <a href="#">#nootropics <span class="label label-normal pull-right">11</span></a>
+                        </li>
+                        <li>
+                            <a href="#">#oldtimer</a>
+                        </li>
+                        <li>
+                            <a class="notification-highlight" href="#">pot <span class="label label-highlight pull-right">3</span></a>
+                        </li>
+                    </ul>
+                </ul>
+                <!-- /#side-menu -->
+            </div>
+            <!-- /.sidebar-collapse -->
+        </nav>
+        <!-- /.navbar-static-side -->
+
+        <div class="page-topic">
+            <div style="float: left">Komm mit mir ins Abenteuerland | Welcome to /b/</div>
+            <div style="float: right"><i class="fa fa-users userlist-icon"></i></div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="input-group">
-                <input id="textfield" type="text" class="form-control">
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-default" id="submit">
-                        Send
-                    </button>
+        <div id="page-wrapper">
+            <div class="row">
+                <div id="messagebox" class="col-md-12 messagebox">
+                    <div class="messagebox-row">
+                        <div class="messagebox-user user-self-bold">dan</div>
+                        <div class="messagebox-text user-self">Testing one two - testing one two.</div>
+                    </div>
+                    <div class="messagebox-row">
+                        <div class="messagebox-user">Ditti</div>
+                        <div class="messagebox-text">Hello!</div>
+                    </div>
+                    <div class="messagebox-row">
+                        <div class="messagebox-user">SSL</div>
+                        <div class="messagebox-text">sup</div>
+                    </div>
+                    <div class="messagebox-row">
+                        <div class="messagebox-user">maggin</div>
+                        <div class="messagebox-text">yo</div>
+                    </div>
+                </div>
+            </div>
+            <!-- TODO: This should be on the bottom of the page -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input id="textfield" type="text" class="form-control" style="border-radius: 0px;">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default" id="submit" style="border-radius: 0px;">
+                                Send
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- /#page-wrapper -->
+
     </div>
 </div>
 

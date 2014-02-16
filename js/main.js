@@ -24,8 +24,20 @@ function stripHTML(text) {
 
 // listeners
 
+var active_chan = "#test";
+
 function onMessage(nick, to, text) {
     $('#messagebox').append('&lt;' + stripHTML(nick) + '&gt; ' + stripHTML(text) + '<br />');
+}
+
+function onCommand(args) {
+    if (args[0] == "join") {
+        client.join(args[1]);
+        active_chan = args[1];
+    } else if (args[0] == "nick") {
+        client.send("NICK", args[1]);
+        onMessage('---', active_chan, "You are now known as " + args[1]);
+    }
 }
 
 client.addListener('registered', function() {
@@ -46,8 +58,11 @@ client.addListener('join', function(channel) {
 // actions
 
 function sendMessage() {
-    onMessage('testnick', '#test', $('#textfield').val());
-    client.say('#test', $('#textfield').val());
+    if ($('#textfield').val()[0] == "/") onCommand($('#textfield').val().substr(1).split(" "));
+    else {
+        onMessage('testnick', active_chan, $('#textfield').val());
+        client.say(active_chan, $('#textfield').val());
+    }
     $('#textfield').val('');
 }
 
