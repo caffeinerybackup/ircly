@@ -370,47 +370,6 @@ table.dataTable thead .sorting:after {
   position: absolute;
   right: 10px;
 }
-.sidebar .nav li > a i {
-  font-size: 16px;
-  margin-right: 5px;
-}
-.sidebar .nav li > a:focus,
-.sidebar .nav li > a:hover {
-  background-color: #ecf0f1;
-  padding-left: 12px;
-  border-left: solid 3px #428bca;
-  color: #428bca;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-.sidebar .nav .open > a,
-.sidebar .nav .open > a:hover,
-.sidebar .nav .open > a:focus {
-  background-color: #ecf0f1;
-  padding-left: 12px;
-  border-left: solid 3px #428bca;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-.sidebar .nav .active > a,
-.sidebar .nav .active > a:hover,
-.sidebar .nav .active > a:focus {
-  background-color: #ecf0f1;
-  padding-left: 12px;
-  border-left: solid 3px #428bca;
-  color: #428bca;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
 .sidebar .nav .menu .submenu {
   display: none;
   list-style: none;
@@ -434,66 +393,10 @@ table.dataTable thead .sorting:after {
   color: #393939;
   white-space: nowrap;
 }
-.sidebar .nav .menu .submenu > li > a:hover,
-.sidebar .nav .menu .submenu > li > a:focus {
-  background-color: #ecf0f1;
-  color: #428bca;
-  padding-left: 17px;
-  text-decoration: none;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-.sidebar .nav .menu .submenu > .open > a,
-.sidebar .nav .menu .submenu > .open > a:hover,
-.sidebar .nav .menu .submenu > .open > a:focus {
-  background-color: #ecf0f1;
-  padding-left: 12px;
-  border-left: solid 3px #428bca;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-.sidebar .nav .menu .submenu > .active > a,
-.sidebar .nav .menu .submenu > .active > a:hover,
-.sidebar .nav .menu .submenu > .active > a:focus {
-  background-color: #ecf0f1;
-  padding-left: 17px;
-  border-left: solid 3px #428bca;
-  color: #428bca;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
 .sidebar .nav .menu.active .submenu,
 .sidebar .nav .menu.open .submenu {
   display: block;
 }
-
-.sidebar .nav .notification-highlight {
-    padding-left: 12px;
-    color: rgb(155, 89, 182);
-    border-left: solid 3px rgb(155, 89, 182);
-    background-color: rgba(155, 89, 182, 0.1);
-}
-
-.sidebar .nav .notification-highlight:hover {
-    padding-left: 12px;
-    color: rgb(155, 89, 182);
-    border-left: solid 3px rgb(155, 89, 182);
-    background-color: rgba(155, 89, 182, 0.2);
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-} /* TODO: make everything darker on hover (opacity 0.2) */
 
 .label-highlight {
     background-color: rgba(155, 89, 182, 0.5);

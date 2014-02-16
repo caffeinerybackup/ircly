@@ -1,0 +1,41 @@
+@import "elements.less";
+
+@color-activity-selected: #428bca;
+
+.sidebar .nav li > a:hover {
+    padding-left: 15px;
+    color: @color-activity-selected;
+    border-left: solid 3px @color-activity-selected;
+    background-color: lighten(@color-activity-selected, 35%);
+    .transition(0.2s, ease);
+}
+
+.sidebar .nav .activity-selected {
+    padding-left: 12px;
+    color: @color-activity-selected;
+    border-left: solid 3px @color-activity-selected;
+    background-color: lighten(@color-activity-selected, 40%);
+}
+
+.sidebar .nav .activity-selected:hover {
+    padding-left: 15px;
+    background-color: lighten(@color-activity-selected, 35%);
+    .transition(0.2s, ease);
+}
+
+@color-activity-highlight: #9b59b6;
+
+.sidebar .nav .activity-highlight {
+    padding-left: 12px;
+    color: @color-activity-highlight;
+    border-left: solid 3px @color-activity-highlight;
+    background-color: lighten(@color-activity-highlight, 40%);
+}
+
+.sidebar .nav .activity-highlight:hover {
+    padding-left: 15px;
+    color: @color-activity-highlight;
+    border-left: solid 3px @color-activity-highlight;
+    background-color: lighten(@color-activity-highlight, 35%);
+    .transition(0.2s, ease);
+}
