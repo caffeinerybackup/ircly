@@ -1,3 +1,12 @@
+
+$(document).keydown(function (evt) {
+    if ((evt.altKey) && evt.keyCode == 49) {
+        evt.preventDefault();
+        alert("SWITCH");
+    }
+    console.log(evt.keyCode);
+});
+
 var irc = require('irc');
 
 var client = new irc.Client('chat.kerat.net', 'testnick', {
