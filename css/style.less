@@ -1,35 +1,93 @@
 @import "elements.less";
 
 @color-activity-selected: #428bca;
+@color-activity-highlight: #9b59b6;
 
-.sidebar .nav li > a:hover {
+@lighten-activity-background: 40%;
+@lighten-activity-background-hover: @lighten-activity-background - 5;
+@lighten-message-background: 45%;
+@lighten-message-background-bold: @lighten-message-background - 5;
+
+.sidebar .nav .activity > a:hover {
     padding-left: 15px;
     color: @color-activity-selected;
     border-left: solid 3px @color-activity-selected;
-    background-color: lighten(@color-activity-selected, 35%);
+    background-color: lighten(@color-activity-selected, @lighten-activity-background-hover);
     .transition(0.2s, ease);
 }
 
-.sidebar .nav .activity-selected {
+.sidebar .nav .activity > .activity-selected {
     padding-left: 12px;
     color: @color-activity-selected;
     border-left: solid 3px @color-activity-selected;
-    background-color: lighten(@color-activity-selected, 40%);
+    background-color: lighten(@color-activity-selected, @lighten-activity-background);
 }
 
-@color-activity-highlight: #9b59b6;
-
-.sidebar .nav .activity-highlight {
+.sidebar .nav .activity > .activity-highlight {
     padding-left: 12px;
     color: @color-activity-highlight;
     border-left: solid 3px @color-activity-highlight;
-    background-color: lighten(@color-activity-highlight, 40%);
+    background-color: lighten(@color-activity-highlight, @lighten-activity-background);
     &:hover {
         /* we need to overwrite the default hover effect (from .sidebar .nav li > a:hover) here */
         padding-left: 15px;
         color: @color-activity-highlight;
         border-left: solid 3px @color-activity-highlight;
-        background-color: lighten(@color-activity-highlight, 35%);
+        background-color: lighten(@color-activity-highlight, @lighten-activity-background-hover);
         .transition(0.2s, ease);
+    }
+}
+
+.header-bar {
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 0;
+}
+
+
+.messagebox {
+    display: table;
+}
+
+.messagebox-row {
+    display: table-row;
+}
+
+.message {
+    display: table-cell;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    
+    &.nick {
+        background-color: #fcfcfc;
+        font-weight: bold;
+        color: #77777;
+        padding-left: 25px;
+        padding-right: 10px;
+        text-align: right;
+        
+        &.self {
+            color: @color-activity-selected;
+            background-color: lighten(@color-activity-selected, @lighten-message-background-bold);
+        }
+        
+        &.highlight {
+            color: @color-activity-highlight;
+            background-color: lighten(@color-activity-highlight, @lighten-message-background);
+        }
+    }
+    
+    &.text {
+        width: 100%;
+        padding: 5px;
+        padding-left: 5px;
+        
+        &.self {
+            background-color: lighten(@color-activity-selected, @lighten-message-background);
+        }
+        
+        &.highlight {
+            background-color: lighten(@color-activity-highlight, @lighten-message-background);
+        }
     }
 }

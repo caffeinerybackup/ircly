@@ -25,8 +25,7 @@
 
 <body>
     <div id="wrapper">
-
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; background-color: #fff; border-bottom: 0;">
+        <nav class="navbar navbar-default navbar-static-top header-bar" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -42,12 +41,12 @@
 
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar sidebar-collapse">
-                <ul class="nav nav-stacked" id="side-menu">
+                <ul class="nav nav-stacked">
                     <li class="navbar-network">
                         <a href="#"><i class="fa fa-bars fa-fw"></i> Bitlbee<span class="fa arrow"></span></a>
                     </li>
                     <ul class="nav nav-second-level collapse in" style="height: auto;">
-                        <li>
+                        <li class="activity">
                             <a href="#">&bitlbee</a>
                         </li>
                     </ul>
@@ -55,25 +54,25 @@
                         <a href="#"><i class="fa fa-bars fa-fw"></i> Kerat<span class="fa arrow"></span></a>
                     </li>
                     <ul class="nav nav-second-level collapse in" style="height: auto;">
-                        <li>
+                        <li class="activity">
                             <a class="activity-selected" href="#">#pupskuchen</a>
                         </li>
-                        <li>
+                        <li class="activity">
                             <a href="#">#tipdice</a>
                         </li>
-                        <li>
+                        <li class="activity">
                             <a href="#">#test</a>
                         </li>
-                        <li>
+                        <li class="activity">
                             <a href="#">#wm</a>
                         </li>
-                        <li>
+                        <li class="activity">
                             <a href="#">#nootropics <span class="label label-normal pull-right">11</span></a>
                         </li>
-                        <li>
+                        <li class="activity">
                             <a href="#">#oldtimer</a>
                         </li>
-                        <li>
+                        <li class="activity">
                             <a class="activity-highlight" href="#">pot <span class="label label-highlight pull-right">3</span></a>
                         </li>
                     </ul>
@@ -92,20 +91,20 @@
             <div class="row">
                 <div id="messagebox" class="col-md-12 messagebox">
                     <div class="messagebox-row">
-                        <div class="messagebox-user user-self-bold">dan</div>
-                        <div class="messagebox-text user-self">Testing one two - testing one two.</div>
+                        <div class="message nick self">dan</div>
+                        <div class="message text self">Testing one two - testing one two.</div>
                     </div>
                     <div class="messagebox-row">
-                        <div class="messagebox-user">Ditti</div>
-                        <div class="messagebox-text">Hello!</div>
+                        <div class="message nick">Ditti</div>
+                        <div class="message text">Hello!</div>
                     </div>
                     <div class="messagebox-row">
-                        <div class="messagebox-user">SSL</div>
-                        <div class="messagebox-text">sup</div>
+                        <div class="message nick">SSL</div>
+                        <div class="message text">sup</div>
                     </div>
                     <div class="messagebox-row">
-                        <div class="messagebox-user">maggin</div>
-                        <div class="messagebox-text">yo</div>
+                        <div class="message nick highlight">maggin</div>
+                        <div class="message text highlight">dan</div>
                     </div>
                 </div>
             </div>
