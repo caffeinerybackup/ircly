@@ -1,13 +1,5 @@
 /* Borrowed from sb-admin-v2 https://github.com/IronSummitMedia/startbootstrap/tree/master/templates/sb-admin-v2 */
 
-/* Global Styles */
-
-/* ------------------------------- */
-
- body {
-    background-color: #f8f8f8;
-}
-
 /* Wrappers */
 
 /* ------------------------------- */
@@ -317,7 +309,6 @@ table.dataTable thead .sorting:after {
 
 /* custom stuff */
 .sidebar {
-  background-color: #fcfcfc;
   display: none;
 }
 @media (min-width: 768px) {
